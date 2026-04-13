@@ -4,9 +4,39 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout>
-        <Label Text="שלום" />
-        <BoxView HeightRequest="50" Color="Red" />
+    <Grid
+        ColumnDefinitions="*,2*"
+        ColumnSpacing="4"
+        RowDefinitions="2*,*,*"
+        RowSpacing="5">
 
-    </StackLayout>
+        <!--Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+
+        </Grid.ColumnDefinitions-->
+
+        <BoxView Grid.Row="1" Color="Red" />
+        <BoxView Grid.Row="2" Color="LightPink" />
+        <BoxView
+            Grid.Row="2"
+            Grid.Column="1"
+            Color="Cyan" />
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            Color="Brown" />
+        <BoxView Grid.Column="1" Color="Black" />
+        <BoxView Grid.ColumnSpan="2" Color="Green" />
+
+        <Grid
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            ColumnDefinitions="*,*"
+            RowDefinitions="*,*" />
+        <BoxView Color="CadetBlue" />
+        <BoxView Grid.Column="1" Color="DarkMagenta" />
+    </Grid>
 </ContentPage>
