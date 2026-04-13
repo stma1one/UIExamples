@@ -35,8 +35,9 @@
             Grid.Row="0"
             Grid.ColumnSpan="2"
             ColumnDefinitions="*,*"
-            RowDefinitions="*,*" />
-        <BoxView Color="CadetBlue" />
-        <BoxView Grid.Column="1" Color="DarkMagenta" />
+            RowDefinitions="*,*">
+            <BoxView Color="CadetBlue" />
+            <BoxView Grid.Column="1" Color="DarkMagenta" />
+        </Grid>
     </Grid>
 </ContentPage>
